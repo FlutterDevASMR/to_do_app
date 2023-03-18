@@ -31,12 +31,13 @@ class _TaskWidgetState extends State<TaskWidget> {
           ),
         ],
       ),
-      child: ListTile(
-        tileColor: Colors.white,
-        shape: RoundedRectangleBorder(
+      child: Container(
+        padding: EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: Colors.white,
           borderRadius: BorderRadius.circular(15),
         ),
-        title: Row(
+        child: Row(
           children: [
             Text(
               widget.task.title,
